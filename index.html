@@ -1,0 +1,359 @@
+<html>
+    	<head>
+        	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        	<title>Ma Ferme</title>
+        <!-- BOOTSTRAP installation -->
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Latest compiled and minified Bootstrap JavaScript + JQuery -->
+        	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        	<link rel="stylesheet" href="style.css">
+    		</head>
+
+        <body>
+
+            <!-- MENU ENTETE -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <!-- Photo + titre  -->
+                    <div class="navbar-header">
+                        <a href="#"><img class="pull-left" src="picture/" ></a>
+                    </div>
+                        <p class="hidden-xs navbar-text">Bienvenue dans ma Ferme !</p>
+
+
+                    <!-- Panier-->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                        	<a href="https://www.linkedin.com/in/hainikoye/" target="_blank">
+                            <button type="button" value="bouton" class="btn btn-warning navbar-btn">
+                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Commander
+                            </button>
+                            </a>
+                        </ul>
+					</div>
+                </div>
+            </nav>
+
+			<br/>
+			<br/>
+
+            <!-- SLIDER -->
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="picture/profil.jpg" alt="">
+                    </div>
+                    <div class="item">
+                         <a href="#produits"><img src="picture/profil2.jpeg" alt="Produits"></a>
+                    </div>
+                    <div class="item">
+                        <a href="#Partenariat"><img src="picture/profil3.jpeg" alt="Partenariat"></a>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Précédent</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Suivant</span>
+                </a>
+            </div>
+
+		<br/>
+            <br/>
+                <h1>Notre ferme</h1>
+            <br/>
+                <p><strong>Situation Géographique</strong></p>
+            <br/>
+                <p><strong>Venez vous faire plaisir</strong></p>
+                <div id="produits"></div>
+            <br/>
+            <br/>
+            <hr/>
+            <br/>           
+                <!-- Shop-->
+            <div class="container-fluid">
+                <div class="row">
+                <h1 id="produits">Nos produits</h1>
+             <br/>
+
+                    <!-- Lait -->
+                    <div class="col-sm-6 col-md-1 col-lg-3">
+                        <div class="thumbnail text-center">
+                            <img src="picture/lait.jpg" alt="bouteille de lait" class="responsive">
+                            <div class="caption">
+                                <h3>Lait</h3>
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target=".socks1">
+                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                                    Voir</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade socks1" tabindex="-1" role="dialog" aria-labelledby="socks1">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="thumbnail text-center">
+                                    <h3>Lait cru</h3>
+                                    <img src="picture/lait.jpg" alt="lait" class="responsive">
+                                    <div class="caption">
+                                        <p class="alert alert-info" id="centrage"> 1L</p>
+                                        <span class="strong">2.000<span class="glyphicon glyphicon-euro" aria-hidden="true"></span>
+                                        </span>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Crème -->
+                    <div class="col-sm-6 col-md-1 col-lg-3">
+                        <div class="thumbnail text-center">
+                            <img src="picture/creme.jpg" alt="creme" class="responsive">
+                            <div class="caption">
+                                <h3>Crème</h3>
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target=".socks2">
+                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                                    Voir</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade socks2" tabindex="-1" role="dialog" aria-labelledby="socks2">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="thumbnail text-center">
+                                    <h3>Crème frâiche </h3>
+                                    <img src="picture/cremy.jpg" alt="creme" class="responsive">
+                                    <div class="caption">
+                                        <p class="alert alert-info">Crème frâiche 250mL</p>
+                                        <span class="strong">1.000<span class="glyphicon glyphicon-euro" aria-hidden="true"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Yaourt -->
+					<div class="col-sm-6 col-md-1 col-lg-3">
+                        <div class="thumbnail text-center">
+                            <img src="picture/yaourt.jpeg" alt="yaourt" class="responsive">
+                            <div class="caption">
+                                <h3>Yaourts</h3>
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target=".socks3">
+                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                                    Voir</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade socks3" tabindex="-1" role="dialog" aria-labelledby="socks3">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="thumbnail text-center">
+                                    <h3>Yaourts</h3>
+                                    <img src="picture/savoie-yaourt.jpg" alt="yaourt" class="responsive">
+                                    <div class="caption">
+                                        <p class="alert alert-info"> Pots de 125 mL</p>
+                                        <span class="strong">1.000<span class="glyphicon glyphicon-euro" aria-hidden="true"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fromage -->
+					<div class="col-sm-6 col-md-1 col-lg-3">
+                        <div class="thumbnail text-center">
+                            <img src="picture/wagaysi.jpg" alt="fromage" class="responsive">
+                            <div class="caption">
+                                <h3>Fromage</h3>
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target=".socks4">
+                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                                    Voir</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade socks4" tabindex="-1" role="dialog" aria-labelledby="socks4">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="thumbnail text-center">
+                                    <h3>Fromage</h3>
+                                    <img src="picture/cru.jpg" alt="fromage" class="responsive">
+                                    <div class="caption">
+                                        <p class="alert alert-info">Fromage au lait de vache cru</p>
+                                        <span class="strong">3.000<span class="glyphicon glyphicon-euro" aria-hidden="true"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+           	</div>
+            <br/>
+            <hr>
+            <br>
+
+            <h1 id="parrainage">Parrainez avec Nous!</h1>
+            <br/>
+  				<!-- Parrainage -->
+            <div class="container-fluid">
+               	<div class="row">
+
+                    <!-- Vache1  -->
+                    <div class="col-sm-6 col-md-1 col-lg-3">
+                        <div class="thumbnail text-center">
+                            <img src="picture/beurre.jpg" alt="" class="responsive">
+                            <div class="caption">
+                                <h3>Beurre de vache</h3>
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target=".socks5">
+                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                                    Parainer</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade socks5" tabindex="-1" role="dialog" aria-labelledby="socks5">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="thumbnail text-center">
+                                    <h3>Lait écremé</h3>
+                                    <img src="picture/lait ecreme.jpg" alt="" class="responsive">
+                                    <div class="caption">
+                                        <p class="alert alert-info">!</p>
+                                        <a href="#" class="btn btn-success" role="button">
+                                            <span class="glyphicon glyphicon-thumbs-up-" aria-hidden="true"></span>
+                                        	Parainer!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vache2  -->
+                    <div class="col-sm-6 col-md-1 col-lg-3">
+                        <div class="thumbnail text-center">
+                            <img src="picture/fermanté.jpg" alt="" class="responsive">
+                            <div class="caption">
+                                <h3>Fermanté</h3>
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target=".socks6">
+                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                                    Parainer</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade socks6" tabindex="-1" role="dialog" aria-labelledby="socks6">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="thumbnail text-center">
+                                    <h3> Lait Fermenté</h3>
+                                    <img src="picture/fermanté.jpg" alt="" class="responsive">
+                                    <div class="caption">
+                                        <p class="alert alert-info"></p>
+                                        <a href="#" class="btn btn-success" role="button">
+                                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                                            Parainer</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vache3  -->
+						<div class="col-sm-6 col-md-1 col-lg-3">
+                        <div class="thumbnail text-center">
+                            <img src="picture/fait maison.jpg" alt="Felindra" class="responsive">
+                            <div class="caption">
+                                <h3></h3>
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target=".socks7">
+                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                                    Parainer</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade socks7" tabindex="-1" role="dialog" aria-labelledby="socks7">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="thumbnail text-center">
+                                    <h3> Lait clarifié</h3>
+                                    <img src="picture/fait maison.jpg" alt="" class="responsive">
+                                    <div class="caption">
+                                        <p class="alert alert-info"></p>
+                                        <a href="#" class="btn btn-success" role="button">
+                                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                                            Parainer</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vache4  -->
+						<div class="col-sm-6 col-md-1 col-lg-3">
+                        	<div class="thumbnail text-center">
+                            <img src="picture/cheveux napy.jpg" alt="" class="responsive">
+                            <div class="caption">
+                                <h3>Cheveux Nappy </h3>
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target=".socks8">
+                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade socks8" tabindex="-1" role="dialog" aria-labelledby="socks8">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="thumbnail text-center">
+                                    <h3> </h3>
+                                    <img src="picture/cheveux napy.jpg" alt="Lucile" class="responsive">
+                                    <div class="caption">
+                                        <p class="alert alert-success"></p>
+                                        <a href="#" class="btn btn-success" role="button">
+                                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                                            !</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           	</div>
+	</body>
+
+
+                <footer>
+            <br/>
+            <hr>
+            <br/>
+                <h1>Nous contacter</h1>
+                        <br/>
+                        <ul id="nav">
+                              <li><a href="#" tit><img title="Téléphone" class="icon" src="picture/telephone.jpg" alt="mail" height="30" width="30"  /></a></li>
+                              <li><a href="#" title="E-mail"><img class="icon" src="picture/mail.jpg" alt="phone" height="30" width="30"  /></a></li>
+                              <li><a href="#" title="Facebook" target="_blank"><img class="icon" src="picture/face.png" alt="facebook" height="30" width="30"  /></a></li>
+                              <li><a href="#" target="_blank" title="Adresse"><img class="icon" src="picture/loca.jpg" alt="pin" height="30" width="30"></a></li>
+                        </ul>
+                      <br/>
+
+                 <h6>
+                    Copyright- Tous droits réservés 2021</h6>
+            </footer>
